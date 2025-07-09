@@ -1,0 +1,6 @@
+[
+  { "id": 1, "text": "User {name} signed up" },
+  { "id": 2, "text": "New order placed" },
+  { "id": 3, "text": "Sales report generated" },
+  { "id": 4, "text": "User {name} gave feedback" }
+]

@@ -1,0 +1,48 @@
+/* src/components/loaders/SquidGameLoader.css */
+
+.squid-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 80px;
+}
+
+.shape {
+  width: 30px;
+  height: 30px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #ff3860;
+  animation-delay: 0s;
+}
+
+.square {
+  background-color: #23d160;
+  animation-delay: 0.2s;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #3273dc;
+  animation-delay: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}

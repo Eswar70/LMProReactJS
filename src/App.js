@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SquidGameLoader from './components/loader/SquidGameLoader';
+
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const Settings = lazy(() => import('./pages/Settings'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Suspense fallback={<div className="flex justify-center mt-10"><SquidGameLoader /></div>}>
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/settings" element={<Settings />} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 

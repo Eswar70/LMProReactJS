@@ -1,0 +1,6 @@
+[
+  { "group": "18-24", "percent": 25 },
+  { "group": "25-34", "percent": 40 },
+  { "group": "35-44", "percent": 20 },
+  { "group": "45+", "percent": 15 }
+]
