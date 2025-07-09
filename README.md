@@ -6,7 +6,7 @@ This project is a fully responsive, interactive dashboard web application built 
 
 ## 🚀 Live Demo
 
-🌐 [Live Web App (Vercel)]([https://your-vercel-link](https://dashboardui-zeta.vercel.app/))
+🌐 [Live Web App (Vercel)](https://dashboardui-zeta.vercel.app/)
 
 ---
 
